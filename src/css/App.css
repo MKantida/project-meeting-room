@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  /* ลบระยะห่างภายนอกทั้งหมด */
+  padding: 0;
+  /* ลบระยะห่างภายในทั้งหมด */
+  box-sizing: border-box;
+  /* ตั้งค่าขนาดให้รวม margin และ padding */
+}
+.container {
+display: flex;
+  flex-direction: column;
+  /* จัดเรียงในแนวตั้ง */
+  min-height: 100vh;
+  /* ความสูงขั้นต่ำ 100% ของ viewport */
+  background-color: #01030e;
+
+}
+
+.header {
+  background-color: rgb(60, 88, 247) !important;
+  height: 60px;
+  flex: 0 0 auto;
+  /* หัวอยู่ที่ตำแหน่งเดิม */
+}
+
+
+
+
+.footer {
+  background-color: aqua;
+  padding: 16px;
+  text-align: center;
+  /* จัดตำแหน่งข้อความให้กึ่งกลาง */
+}
+
+.main {
+  background-color: rgb(190, 139, 248);
+  flex: 1;
+  /* ขยายเต็มพื้นที่ที่เหลืออยู่ */
+  margin: 10px;
+  display: flex;
+  /* ทำให้เป็น Flex Container */
+  flex-direction: column;
+  /* ปรับให้แนวตั้ง */
+  border-radius: 8px;
+  /* มุมโค้ง */
+  padding: 20px;
+  /* เพิ่ม padding รอบๆ */
+}
+
+.menu {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: rgb(155, 113, 252);
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    /* แทนที่จะเป็น 100% ให้ใช้ auto เพื่อปรับตามเนื้อหา */
+    box-sizing: border-box;
+}
+
+.button-image {
+  background-color: rgb(255, 0, 0);
+  /* สีพื้นหลังปุ่ม */
+  border: 8px solid #01030e;
+  /* สีขอบปุ่ม */
+  border-radius: 8px;
+  /* มุมโค้ง */
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px;
+  /* เพิ่มระยะห่างระหว่างปุ่ม */
+}
+
+.button-image img {
+  width: 200px;
+  /* กำหนดขนาดความกว้างของรูปภาพ */
+  height: 200px;
+  /* ให้ความสูงปรับตามอัตราส่วนของภาพ */
+  border-radius: 8px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  /* เพิ่มการเปลี่ยนแปลงเพื่อความนุ่มนวล */
+}
+
+/* สไตล์เมื่อเลื่อนเมาส์ไปที่ภาพ */
+.button-image:hover img {
+  filter: brightness(0.8);
+  /* ลดความสว่าง */
+}

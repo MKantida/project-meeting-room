@@ -1,0 +1,98 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0000008c;
+    /* สีพื้นหลังโปร่งใส */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.background-main {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    /* ปรับขนาดความกว้าง */
+    max-width: 100%;
+    /* ความกว้างสูงสุด */
+}
+
+.C-C-header {
+    background-color: #81104e;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;/* แนวตั้ง */
+    font-size: 15px;
+    color: #ffffff;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.C-C-main {
+    background: #ffffff;
+    /* พื้นหลังของกล่องหลัก */
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    box-shadow: 0 4px 8px #000000;
+    /* เงา */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* แนวตั้ง */
+    font-size: 15px;
+    color: #000000;
+    /* ปรับขนาดตัวอักษร */
+    padding: 15px;
+    /* เพิ่มระยะห่างภายในกล่องหัว */
+}
+
+.C-C-actions {
+    margin-top: 20px;
+    /* ระยะห่างระหว่างข้อความและปุ่ม */
+}
+
+.cancel-button,
+.confirm-button {
+    padding: 10px 20px;
+    /* ขนาดปุ่ม */
+    border: none;
+    border-radius: 5px;
+    /* มุมโค้งของปุ่ม */
+    cursor: pointer;
+    margin: 0 10px;
+    /* ระยะห่างระหว่างปุ่ม */
+    margin-bottom: 5%;
+    /* ระยะห่างด้านล่าง */
+    font-size: 16px;
+    /* ปรับขนาดตัวอักษรปุ่ม */
+}
+.confirm-button {
+    background: #00da1d;
+    /* สีพื้นหลังปุ่มยืนยัน */
+    color: rgb(0, 0, 0);
+    border: 1px solid #000000;
+}
+.confirm-button:hover{
+background-color: #00a529;
+}
+
+.cancel-button {
+    background: #d63535;
+    /* สีพื้นหลังปุ่มยกเลิก */
+    color: rgb(0, 0, 0);
+    border: 1px solid #000000;
+}
+.cancel-button:hover {
+    background: #ac2626;
+
+}
+

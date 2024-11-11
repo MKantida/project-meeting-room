@@ -1,0 +1,30 @@
+.sidebar {
+    width: 200px ;
+    /* ความกว้างของ Sidebar */
+    background-color: #f8a9a9;
+    /* สีพื้นหลัง */
+    padding: 10px;
+    /* ระยะห่างภายใน */
+    height: 100%;
+    /* ทำให้ Sidebar สูงเท่ากับ Main */
+    display: flex;
+    /* ใช้ flexbox สำหรับจัดการรายการ */
+    flex-direction: column;
+    /* จัดเรียงรายการในแนวตั้ง */
+}
+
+.sidebar .MuiListItem-root {
+    margin-bottom: 10px;
+    /* ระยะห่างระหว่างรายการ */
+}
+
+.sidebar .MuiListItem-root:hover {
+    background-color: #f00e0e;
+}
+
+.sidebar .MuiListItemText-root {
+    text-align: center;
+    /* จัดข้อความให้อยู่กลาง */
+    font-weight: bold;
+    /* ทำให้ข้อความหนาขึ้น */
+}

@@ -1,0 +1,112 @@
+/* Calendar.css */
+.t1 {
+    width: 80%;
+    border-radius: 8px;
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: aqua;
+    padding: 16px;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.weekdays {
+    background-color: #012141;
+    color: hsl(0, 0%, 97%);
+    border: 1px solid #000000;
+    padding: 8px;
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+
+}
+
+.days {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 8px;
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+
+}
+
+.day,
+.empty-day {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    color: #333;
+
+}
+
+.day {
+    cursor: pointer;
+
+}
+
+.day:hover {
+    background-color: #4bbdff;
+    color: white;
+    border-radius: 4px;
+    /* ทำให้เป็นวงกลม */
+}
+
+.today {
+    background-color: #ebb728;
+    /* สีทองสำหรับเน้นวันปัจจุบัน */
+    color: #000000;
+    border-radius: 4px;
+}
+
+.month,
+.year {
+    width: 100%;
+    /* กำหนดความกว้างของกล่อง */
+    padding: 8px;
+    /* เพิ่มระยะห่างภายใน */
+    font-size: 16px;
+    /* ขนาดตัวอักษร */
+    color: #333;
+    /* สีตัวอักษร */
+    background-color: #f9f9f9;
+    /* สีพื้นหลัง */
+    border: 1px solid #ccc;
+    /* เส้นขอบสีเทา */
+    border-radius: 4px;
+    /* มุมโค้งของกล่อง */
+
+}
+
+
+
+.iconBack-Forwar {
+    width: 20%;
+    background-color: #4CAF50;
+    /* สีเขียว */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    /* ให้ปุ่มมีรูปร่างกลม */
+    padding: 8px;
+    /* เพิ่มระยะห่างภายในปุ่ม */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    /* เพิ่มเอฟเฟกต์เปลี่ยนสี */
+}
+
+.iconBack-Forwar:hover {
+    background-color: #fffb15;
+    /* สีเมื่อเอาเมาส์ไปวาง */
+}

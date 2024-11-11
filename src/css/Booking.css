@@ -1,0 +1,96 @@
+.background-content {
+    background-color: #186e96;
+    display: flex;
+    flex-direction: column;
+    /* จัดเรียงในแนวตั้ง */
+    flex: 1;
+    /* ความสูงขั้นต่ำ 100% ของ viewport */
+    border-radius: 8px;
+    margin: 10px;
+    padding: 16px;
+}
+
+.columns-one {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-long,
+.form-short,
+textarea {
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #01030e;
+    height: 30px;
+    text-align: left;
+    padding: 5px;
+    color: #000;
+
+}
+
+.form-long {
+    margin-bottom: 10px;
+}
+.form-short {
+    width: 100%;
+    /* ให้ input เต็มความกว้างของคอลัมน์ */
+}
+textarea {
+    resize: vertical;
+    /* ปรับขนาดในแนวตั้งเท่านั้น */
+}
+
+.columns-two {
+    display: flex;
+    /* ใช้ flexbox เพื่อจัดเรียงในแถว */
+    justify-content: space-between;
+    /* แบ่งช่องว่างให้เท่ากัน */
+    margin-bottom: 15px;
+    /* ระยะห่างระหว่างแถว */
+}
+
+.column {
+    flex: 1;
+    /* ให้แต่ละคอลัมน์มีความกว้างเท่ากัน */
+    margin-right: 10px;
+    /* ระยะห่างระหว่างคอลัมน์ */
+}
+
+.column:last-child {
+    margin-right: 0;
+    /* ไม่ต้องมีระยะห่างที่คอลัมน์สุดท้าย */
+}
+
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+}
+
+.save,
+.cancel{
+    color: #000000;
+        width: 100px;
+        height: 25px;
+        border-radius: 4px;
+        border: 1px solid #01030e;
+        font-size: 16px;
+        cursor: pointer;
+}
+
+.save {
+    background-color: green;
+}
+.save:hover {
+    background-color: rgb(46, 252, 46);
+}
+
+.cancel {
+    background-color: firebrick;
+}
+.cancel:hover {
+background-color: rgb(255, 77, 77);
+}
