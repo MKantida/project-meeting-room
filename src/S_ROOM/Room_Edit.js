@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import Confirm from './Confirm';
-import './css/Booking.css';
+import Confirm from '../Confirm';
+import '../css/Booking.css';
 
 const RoomEdit = () => {
     const location = useLocation();
@@ -37,7 +37,7 @@ const RoomEdit = () => {
             console.error('Error fetching room status:', error); // แสดงข้อความเมื่อเกิดข้อผิดพลาด
         }
     };
-;
+    ;
 
     useEffect(() => {
         if (roomId) {

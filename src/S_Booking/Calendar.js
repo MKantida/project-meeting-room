@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import './css/Calendar.css';
+import '../css/Calendar.css';
 
 
 const Calendar = () => {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Confirm from './Confirm'; // นำเข้า Confirm component
-import './css/Booking.css';
+import Confirm from '../Confirm'; // นำเข้า Confirm component
+import '../css/Booking.css';
 import axios from 'axios';
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -211,10 +211,10 @@ const Booking_Edit = () => {
                                 value={bookingData.room_id || ''}  // ถ้าไม่มีค่า ให้แสดงเป็นค่าว่าง
                                 onChange={handleRoomChange}        // ฟังก์ชันเปลี่ยนค่าของห้องประชุม
                             >
-                                <option value="">เลือกห้องประชุม</option>  
+                                <option value="">เลือกห้องประชุม</option>
                                 {rooms.map(room => (                     // แสดงรายการห้องประชุมที่ได้จาก `rooms`
                                     <option key={room.room_id} value={room.room_id}>
-                                        {room.roomname}                   
+                                        {room.roomname}
                                     </option>
                                 ))}
                             </select>
