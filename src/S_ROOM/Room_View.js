@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './css/Booking.css';
+import '../css/Booking.css';
 
 const RoomView = () => {
     const location = useLocation();

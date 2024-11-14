@@ -16,7 +16,8 @@ const Sidebar = ({ toggleDrawer }) => {
     // กำหนดเมนูหลัก
     const mainMenu = [
         { label: 'หน้าแรก', path: '/' },
-        { label: 'เกี่ยวกับ', path: '/about' }
+        { label: 'เกี่ยวกับ', path: '/about' },
+        { label: 'ระบบจัดการห้องประชุม', path: '/room' }
     ];
 
     // กำหนดเมนูสำหรับระบบจองห้องประชุม
