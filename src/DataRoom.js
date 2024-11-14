@@ -5,9 +5,9 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
-import Delete from '../Delete'; // Import DeleteDialog
+import Delete from './Delete'; // Import DeleteDialog
 import { useNavigate } from 'react-router-dom';
-import '../css/DataMeet.css';
+import './css/DataMeet.css';
 
 const DataTableRoom = () => {
     const [data, setData] = useState([]);

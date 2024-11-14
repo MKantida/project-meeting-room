@@ -8,10 +8,10 @@ import Booking_Add from './S_Booking/Booking_Add'; // นำเข้า Booking
 import Booking_Edit from './S_Booking/Booking_Edit';
 import Booking_View from './S_Booking/Booking_View';
 
-import Room from './S_ROOM/Room';
-import Room_Add from './S_ROOM/Room_Add';
-import Room_Edit from './S_ROOM/Room_Edit';
-import Room_View from './S_ROOM/Room_View';
+import Room from './Room';
+import Room_Add from './Room_Add';
+import Room_Edit from './Room_Edit';
+import Room_View from './Room_View';
 
 function AppRouter() {
     return (
