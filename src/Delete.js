@@ -2,7 +2,7 @@ import React from 'react';
 
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 
-import './css/Delete-Confirm.css'; // นำเข้าไฟล์ CSS
+import './css/Button.css'; // นำเข้าไฟล์ CSS
 
 const Delete = ({ open, onClose, onConfirm }) => {
     if (!open) return null; // ไม่แสดงถ้าไม่เปิด

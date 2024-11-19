@@ -75,24 +75,91 @@
     font-size: 16px;
     /* ปรับขนาดตัวอักษรปุ่ม */
 }
-.confirm-button {
+
+.save,
+.cancel {
+    color: #000000;
+    width: 100px;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid #01030e;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.confirm-button,
+.save {
     background: #00da1d;
     /* สีพื้นหลังปุ่มยืนยัน */
     color: rgb(0, 0, 0);
     border: 1px solid #000000;
 }
-.confirm-button:hover{
-background-color: #00a529;
+.confirm-button,
+.save:hover{
+    background-color: #00a529;
 }
 
-.cancel-button {
+.cancel-button,
+.cancel {
     background: #d63535;
     /* สีพื้นหลังปุ่มยกเลิก */
     color: rgb(0, 0, 0);
     border: 1px solid #000000;
 }
-.cancel-button:hover {
+.cancel-button,
+.cancel:hover {
     background: #ac2626;
 
 }
+
+
+.button-back,
+.button-next {
+    background-color: #ffffff;
+    color: #000000;
+    width: 20px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.button-page {
+    background-color: #ffffff;
+    font-size: 16px;
+    width: 20px;
+    color: #000;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    padding: 1px;
+}
+
+
+.button-view,
+.button-edit,
+.button-delete {
+    margin: 1px;
+    cursor: pointer;
+}
+
+.button-view {
+    background-color: #7fff00;
+    border-radius: 4px;
+    border: 1px solid #000000;
+}
+
+.button-edit {
+    background-color: #ffd700;
+    border-radius: 4px;
+    border: 1px solid #000000;
+}
+
+.button-delete {
+    background-color: #ff2d2d;
+    border-radius: 4px;
+    border: 1px solid #000000;
+
+}
+
 

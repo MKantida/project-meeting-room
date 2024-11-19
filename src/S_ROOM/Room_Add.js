@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Confirm from '../Confirm'; // นำเข้า Confirm component
-import '../css/Booking.css';
+import '../css/Add_Information.css';
+import '../css/Button.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
@@ -103,7 +104,7 @@ const Room_Add = () => {
 
             <div className='form-button'>
                 <button className='save' onClick={handleSaveClick}><p>บันทึก</p></button>
-                <button className='cancel' onClick={handleCancel}><p>ยกเลิก</p></button>
+                <button className='cancel' onClick={() => window.history.back()}><p>ยกเลิก</p></button>
             </div>
 
             {/* แสดง Confirm dialog ถ้า isConfirmOpen เป็นจริง */}

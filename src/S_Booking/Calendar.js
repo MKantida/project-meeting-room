@@ -7,6 +7,7 @@ import '../css/Calendar.css';
 
 const Calendar = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
+  const [selectedDate, setSelectedDate] = useState(null); // เพิ่มสถานะสำหรับวันที่ที่เลือก
   const today = new Date();
 
   const daysInMonth = (month, year) => new Date(year, month + 1, 0).getDate();
@@ -26,7 +27,11 @@ const Calendar = () => {
         currentDate.getFullYear() === today.getFullYear();
 
       days.push(
-        <div key={day} className={`day ${isToday ? 'today' : ''}`}>
+        <div
+          key={day}
+          className={`day ${isToday ? 'today' : ''}`}
+          onClick={() => setSelectedDate(new Date(currentDate.getFullYear(), currentDate.getMonth(), day))} // คลิกเพื่อเลือกวันที่
+        >
           {day}
         </div>
       );
@@ -54,17 +59,9 @@ const Calendar = () => {
   return (
     <div className="t1">
 
-      <div className="header1">
-        <div>
-          <span> {currentDate.getDate()}</span>
-          {currentDate.toLocaleString('th-TH', { month: 'long', year: 'numeric' })}
-          
-        </div>
-      </div>
 
       <div className="header1">
-
-        <select value={currentDate.getMonth()} onChange={handleMonthChange} className='month'>
+        <select value={currentDate.getMonth()} onChange={handleMonthChange} className="month">
           {Array.from({ length: 12 }, (_, i) => (
             <option key={i} value={i}>
               {new Date(0, i).toLocaleString('th-TH', { month: 'long' })}
@@ -72,7 +69,7 @@ const Calendar = () => {
           ))}
         </select>
 
-        <select value={currentDate.getFullYear() + 543} onChange={handleYearChange} className='year'>
+        <select value={currentDate.getFullYear() + 543} onChange={handleYearChange} className="year">
           {Array.from({ length: 10 }, (_, i) => {
             const year = today.getFullYear() - 5 + i + 543; // แปลงปี ค.ศ. เป็น พ.ศ.
             return (
@@ -82,22 +79,21 @@ const Calendar = () => {
             );
           })}
         </select>
-
       </div>
 
-     
-
       <div className="header1">
-        <button onClick={goToPreviousMonth} className='iconBack-Forwar'>
+        <button onClick={goToPreviousMonth} className="iconBack-Forwar">
           <ArrowBackIosNewIcon />
         </button>
         <div>
-          {currentDate.toLocaleString('th-TH', { month: 'long', year: 'numeric' })}
-          
+          {selectedDate
+            ? selectedDate.toLocaleString('th-TH', { day: 'numeric', month: 'long', year: 'numeric' })
+
+            : today.toLocaleString('th-TH', { day: 'numeric', month: 'long', year: 'numeric' })}
         </div>
 
-        <button onClick={goToNextMonth} className='iconBack-Forwar'>
-          <ArrowForwardIosIcon color="primary" />
+        <button onClick={goToNextMonth} className="iconBack-Forwar">
+          <ArrowForwardIosIcon />
         </button>
       </div>
 
@@ -112,8 +108,6 @@ const Calendar = () => {
         <div>เสาร์</div>
       </div>
       <div className="days">{generateCalendar()}</div>
-
-
     </div>
   );
 };

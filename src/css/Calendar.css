@@ -5,7 +5,7 @@
     margin: auto;
     text-align: center;
     font-family: sans-serif;
-    background-color: aqua;
+    background-color: #f3f3e0;
     padding: 16px;
 }
 
@@ -17,8 +17,9 @@
 }
 
 .weekdays {
-    background-color: #012141;
-    color: hsl(0, 0%, 97%);
+    background-color: #003f5c;
+    color: #ffffff;
+    font-size: 18px;
     border: 1px solid #000000;
     padding: 8px;
     border-radius: 2px;
@@ -54,16 +55,16 @@
 }
 
 .day:hover {
-    background-color: #4bbdff;
-    color: white;
+    background-color: #6e9991;
+    color: #ffffff;
     border-radius: 4px;
     /* ทำให้เป็นวงกลม */
 }
 
 .today {
-    background-color: #ebb728;
+    background-color: #316c78;
     /* สีทองสำหรับเน้นวันปัจจุบัน */
-    color: #000000;
+    color: #ffffff;
     border-radius: 4px;
 }
 
@@ -90,9 +91,9 @@
 
 .iconBack-Forwar {
     width: 20%;
-    background-color: #4CAF50;
+    background-color: #31511E;
     /* สีเขียว */
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     /* ให้ปุ่มมีรูปร่างกลม */
@@ -107,6 +108,6 @@
 }
 
 .iconBack-Forwar:hover {
-    background-color: #fffb15;
+    background-color: #DE8F5F;
     /* สีเมื่อเอาเมาส์ไปวาง */
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
-import './css/Delete-Confirm.css'; // นำเข้าไฟล์ CSS
+import './css/Button.css'; // นำเข้าไฟล์ CSS
 
 const Confirm = ({ open, onClose, onConfirm }) => {
     if (!open) return null; // ไม่แสดงถ้าไม่เปิด

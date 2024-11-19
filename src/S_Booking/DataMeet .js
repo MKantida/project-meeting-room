@@ -7,7 +7,8 @@ import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Delete from '../Delete'; // Import DeleteDialog
 import { useNavigate } from 'react-router-dom';
-import '../css/DataMeet.css';
+import '../css/DataTable.css';
+import '../css/Button.css';
 
 const DataTableRoom = () => {
     const [data, setData] = useState([]);
@@ -211,7 +212,7 @@ const DataTableRoom = () => {
                 </select>
 
                 <button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1} className='button-back'>
-                    <ArrowBackIosNewIcon color="primary" style={{ fontSize: '15px' }} />
+                    <ArrowBackIosNewIcon style={{ fontSize: '16px' }} />
                 </button>
                 {Array.from({ length: totalPages }, (_, index) => (
                     <button
@@ -223,7 +224,7 @@ const DataTableRoom = () => {
                     </button>
                 ))}
                 <button onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages} className='button-next'>
-                    <ArrowForwardIosIcon color="primary" style={{ fontSize: '15px' }} />
+                    <ArrowForwardIosIcon style={{ fontSize: '16px' }} />
                 </button>
             </div>
         </div>

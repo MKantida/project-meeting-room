@@ -1,5 +1,5 @@
 .background-content {
-    background-color: #186e96;
+    background-color: #6e9991;
     display: flex;
     flex-direction: column;
     /* จัดเรียงในแนวตั้ง */
@@ -68,29 +68,4 @@ textarea {
     align-items: center;
     gap: 80px;
 
-}
-
-.save,
-.cancel{
-    color: #000000;
-        width: 100px;
-        height: 25px;
-        border-radius: 4px;
-        border: 1px solid #01030e;
-        font-size: 16px;
-        cursor: pointer;
-}
-
-.save {
-    background-color: green;
-}
-.save:hover {
-    background-color: rgb(46, 252, 46);
-}
-
-.cancel {
-    background-color: firebrick;
-}
-.cancel:hover {
-background-color: rgb(255, 77, 77);
 }

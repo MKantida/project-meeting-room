@@ -88,3 +88,9 @@ git commit -m "ข้อความที่อธิบายการแก�
 git pull origin master
 5. Push การเปลี่ยนแปลงไปยัง remote repository
 git push origin master
+
+
+หลังจากโหลด GitHub
+npm install
+node server.js
+npm start

@@ -21,7 +21,7 @@ function App() {
                     <IconButton edge="start" color="inherit" onClick={toggleDrawer(true)}>
                         <MenuIcon /> {/* เรียกใช้ MenuIcon ที่เป็นแถบเมนู*/}
                     </IconButton>
-                    <Typography variant="h6">ระบบการจัดการต่างๆ</Typography>
+                    ระบบการจัดการต่างๆ
                 </Toolbar>
             </AppBar>
 

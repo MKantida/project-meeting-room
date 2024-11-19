@@ -3,8 +3,9 @@
     margin: 20px auto;
     width: 100%;
     text-align: center;
+    color: #ffffff;
     font-family: sans-serif;
-    background-color: #3f6c7f;
+    background-color: #003f5c;
     border-radius: 8px;
     border: 1px solid #000000;
     overflow-x: auto;
@@ -12,8 +13,8 @@
 }
 
 .table {
-    background-color: rgb(32, 60, 97);
     color: #ffffff;
+    font-size: 15px;
     width: 100%;
     border-collapse: collapse;
     /* มุมซ้ายบน และขวาบนของตาราง */
@@ -64,7 +65,7 @@ td {
 }
 
 .list-row:hover {
-    background-color: #ff1414;
+    background-color: #6e9991;
     /* สีพื้นหลังเมื่อเลื่อนเมาส์ */
 }
 
@@ -86,52 +87,3 @@ td {
     margin-right: 5px;
 }
 
-.button-back,
-.button-next {
-    background-color: aquamarine;
-    width: 20px;
-    color: #ff2d2d;
-    border-radius: 4px;
-    border: 1px solid #000000;
-    cursor: pointer;
-    /* แสดงเป็นตัวชี้นิ้วเมื่อโฮเวอร์ */
-
-}
-
-
-
-.button-page {
-    background-color: aquamarine;
-    font-size: 16px;
-    width: 20px;
-    color: #000;
-    border-radius: 4px;
-    border: 1px solid #000000;
-    cursor: pointer;
-}
-
-.button-view,
-.button-edit,
-.button-delete {
-    margin: 1px;
-    cursor: pointer;
-}
-
-.button-view {
-    background-color: chartreuse;
-    border-radius: 4px;
-    border: 1px solid #000000;
-}
-
-.button-edit {
-    background-color: gold;
-    border-radius: 4px;
-    border: 1px solid #000000;
-}
-
-.button-delete {
-    background-color: #ff2d2d;
-    border-radius: 4px;
-    border: 1px solid #000000;
-    
-}
